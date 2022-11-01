@@ -1,7 +1,11 @@
 class Wektor2D
 {
     public:
-    Wektor2D(){};
+    Wektor2D()
+    {
+        setX(0.0);
+        setY(0.0); 
+    };
     Wektor2D(double in_x, double in_y) //Konstruktor
     {
         
