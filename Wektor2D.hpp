@@ -22,3 +22,23 @@ class Wektor2D
     private:
     int x,y;
 };
+
+Wektor2D operator+(Wektor2D w1, Wektor2D w2)
+{
+    double x1,y1,x2,y2;
+    x1= w1.getX();
+    x2= w2.getX();
+    y1= w1.getY();
+    y2= w2.getY();
+    return Wektor2D{x1+x2, y1+y2};
+}
+
+Wektor2D operator*(Wektor2D w1, Wektor2D w2)
+{
+    double x1,y1,x2,y2;
+    x1= w1.getX();
+    x2= w2.getX();
+    y1= w1.getY();
+    y2= w2.getY();
+    return Wektor2D{x1*x2, y1*y2};
+}
