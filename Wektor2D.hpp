@@ -25,7 +25,7 @@ class Wektor2D
     double norm() { return (sqrt((x*x)+(y*y))); }
     void print(){std::cout<< "x=" << x <<"  "<< "y=" << y << " " << "istnieje wek:" << num_wek <<  std::endl;}
     //Informer i;
-
+//
     private:
     int x,y;
     static int num_wek;
